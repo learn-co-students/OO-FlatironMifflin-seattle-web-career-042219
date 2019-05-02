@@ -36,7 +36,7 @@ class Employee
 
   def tax_bracket
     @@all.select do |employee|
-      self.salary + 1001 > employee.salary && self.salary - 1001 < employee.salary
+      self.salary + 1001 > employee.salary && self.salary - 1001 < employee.salary && self.name != employee.name
     end
   end
 
