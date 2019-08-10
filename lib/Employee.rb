@@ -32,7 +32,6 @@ class Employee
     end
 
     def tax_bracket
-        
         Employee.all.find_all do |employee|
             (employee.salary - self.salary ).between?(-1000, 1000)
         end
